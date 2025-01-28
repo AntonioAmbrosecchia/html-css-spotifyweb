@@ -95,6 +95,10 @@
         }
     }
 
+    #container_recently_played {
+        background-color: aqua;
+    }
+
     #main_container_profile_download {
         background-color: yellow;
 
@@ -121,6 +125,36 @@
                 background-color: blue;
             }
         }
+    }
+
+    footer {
+        background-color: brown;
+    }
+
+    #row_container_songs {
+        background-color: chartreuse;
+
+        .container_song {
+            background-color: aqua;
+
+            .img_song {
+                background-color: rgb(197, 101, 29);
+            }
+
+            .text_song {
+                background-color: blueviolet;
+            }
+        }
+    }
+
+    #container_canzone_in_riproduzione {
+        background-color: purple;
+
+        #container_img_text_rip {
+            background-color: brown;
+        }
+
+        #container_icon_rip {}
     }
 
     #container_column_main {
@@ -314,15 +348,48 @@
                 justify-content: space-around;
                 flex-wrap: wrap;
                 width: 100%;
-                height: 15%;
                 padding: 20px;
+                margin-bottom: 30px;
 
                 .categorie {
                     display: flex;
-                    flex-wrap: wrap;
                     height: 20%;
-                    min-width: calc(100% / 12 * 5);
+                    width: calc(100% / 12 * 3);
                     border: 3px solid black;
+                }
+            }
+
+            #container_recently_played {
+                width: 35%;
+                height: 5%;
+                margin-left: 20px;
+                margin-bottom: 30px;
+            }
+
+            #row_container_songs {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 74%;
+                padding: 20px;
+
+                .container_song {
+                    display: flex;
+                    flex-direction: column;
+                    border: 1px solid black;
+                    width: 40%;
+                    margin: 10px;
+
+                    .img_song {
+                        width: 100%;
+                        height: 140px;
+                    }
+
+                    .text_song {
+                        width: 100%;
+                        height: 72px;
+                    }
                 }
             }
 
@@ -338,17 +405,22 @@
         }
 
 
+    }
 
 
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        width: 100%;
+        padding: 10px;
 
+        #container_canzone_in_riproduzione {
 
+            #container_img_text_rip {}
 
-
-
-
-
-
-
-
+            #container_icon_rip {}
+        }
     }
 }
