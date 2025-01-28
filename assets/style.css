@@ -58,6 +58,54 @@
         background-color: cadetblue;
     }
 
+    #container_crea_playlist {
+        background-color: yellow;
+
+        #tasto_add {
+            background-color: brown;
+        }
+
+        #scritta_crea_playlist {
+            background-color: blue;
+        }
+    }
+
+    #container_nome_playlist {
+        background-color: yellow;
+
+        .nomi_playlist {
+            background-color: blue;
+        }
+    }
+
+    #main_container_profile_download {
+        background-color: yellow;
+
+        #container_download {
+            background-color: green;
+
+            #icon_download {
+                background-color: orange;
+            }
+
+            #text_download {
+                background-color: blue;
+            }
+        }
+
+        #container_profile {
+            background-color: green;
+
+            #foto_profile {
+                background-color: brown;
+            }
+
+            #text_profile {
+                background-color: blue;
+            }
+        }
+    }
+
     #container_column_main {
         display: flex;
         justify-content: row;
@@ -136,15 +184,92 @@
                 width: 50%;
                 height: 2%;
                 margin-left: 35px;
+                margin-bottom: 30px;
             }
 
+            #container_crea_playlist {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 35px;
+                margin-bottom: 30px;
+                width: 75%;
+                height: 5%;
+
+                #tasto_add {
+                    width: 30%;
+                    height: 70%;
+                }
+
+                #scritta_crea_playlist {
+                    width: 50%;
+                    height: 50%;
+                }
+            }
+
+            #container_nome_playlist {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 75%;
+                height: 35%;
+                margin-left: 35px;
+                margin-bottom: 55%;
+
+                .nomi_playlist {
+                    width: 70%;
+                    height: calc(100% / 12 * 1);
+                }
+            }
+
+            #main_container_profile_download {
+                display: flex;
+                flex-direction: column;
+                height: 9%;
+                padding: 10px;
+
+                hr {}
+
+                #container_download {
+                    display: flex;
+                    align-items: center;
+                    height: 50%;
+                    width: 100%;
+
+                    #icon_download {
+                        width: 10%;
+                        height: 50%;
+                    }
+
+                    #text_download {
+                        width: 50%;
+                        height: 50%;
+                    }
+                }
+
+                #container_profile {
+                    display: flex;
+                    align-items: center;
+                    height: 50%;
+                    width: 100%;
+
+                    #foto_profile {
+                        width: 20%;
+                        height: 60%;
+                    }
+
+                    #text_profile {
+                        width: 40%;
+                        height: 60%;
+                    }
+                }
 
 
 
 
 
 
-
+            }
         }
 
 
