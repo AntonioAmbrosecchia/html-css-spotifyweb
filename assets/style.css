@@ -7,7 +7,7 @@
 
 :root {
     --spo-colonna: #000000;
-    --spo-upgrade: #080b12;
+    --spo-upgrade: #080b12d4;
     --spo-main: #141922;
     --spo-font: #6f6f6f;
     --spo-bordo: #adff2f;
@@ -15,42 +15,6 @@
 }
 
 .debug {
-    column {}
-
-    main {
-        background-color: blue;
-    }
-
-
-
-
-
-
-
-
-
-
-
-    #container_banda_main {
-        background-color: darkgreen;
-
-        #effettua_lupgrade {
-            background-color: brown;
-        }
-    }
-
-    #main_container_categorie {
-        background-color: red;
-
-        .categorie {
-            background-color: blue;
-
-        }
-    }
-
-    #container_recently_played {
-        background-color: aqua;
-    }
 
 
 
@@ -268,6 +232,7 @@
         }
 
         main {
+            background-color: var(--spo-main);
             display: flex;
             flex-direction: column;
             width: calc(100% - 230px);
@@ -275,13 +240,24 @@
             overflow-y: auto;
 
             #container_banda_main {
+                background-color: var(--spo-upgrade);
                 display: flex;
                 justify-content: end;
                 align-items: center;
                 width: 100%;
                 height: 90px;
 
-                #effettua_lupgrade {}
+                #effettua_lupgrade {
+                    color: white;
+                    border: 2px solid white;
+                    border-radius: 30px;
+                    margin-right: 5px;
+                    padding-top: 14px;
+                    padding-bottom: 14px;
+                    font-size: 14px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
             }
 
             #main_container_categorie {
@@ -290,21 +266,23 @@
                 justify-content: space-around;
                 flex-wrap: wrap;
                 width: 100%;
-                height: 100px;
                 padding: 20px;
-                margin-bottom: 30px;
+
 
                 .categorie {
+                    color: var(--spo-font);
                     display: flex;
-                    height: 20%;
-                    width: calc(100% / 12 * 3);
-                    border: 3px solid black;
+                    justify-content: center;
+                    font-size: 16px;
+                    display: flex;
+                    width: calc(100% / 12 * 4);
+                    margin-bottom: 30px;
                 }
             }
 
             #container_recently_played {
-                width: 35%;
-                height: 5%;
+                color: white;
+                font-size: 28px;
                 margin-left: 20px;
                 margin-bottom: 30px;
             }
@@ -320,12 +298,55 @@
                     display: flex;
                     flex-direction: column;
                     border: 1px solid black;
-                    width: 40%;
+                    width: 170px;
                     margin: 10px;
 
-                    .img_song {
+                    #img_song_1 {
+                        background-image: url(../assets/img/metal_lifting.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
                         width: 100%;
-                        height: 140px;
+                        height: 160px;
+                    }
+
+                    #img_song_2 {
+                        background-image: url(../assets/img/metal_lifting.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 160px;
+                    }
+
+                    #img_song_3 {
+                        background-image: url(../assets/img/metal_lifting.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 160px;
+                    }
+
+                    #img_song_4 {
+                        background-image: url(../assets/img/metal_lifting.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 160px;
+                    }
+
+                    #img_song_5 {
+                        background-image: url(../assets/img/metal_lifting.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 160px;
+                    }
+
+                    #img_song_6 {
+                        background-image: url(../assets/img/metal_lifting.jpg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 160px;
                     }
 
                     .text_song {
@@ -355,7 +376,6 @@
         justify-content: center;
         align-items: center;
         height: 90px;
-        width: 100%;
         overflow-y: auto;
         padding: 10px;
 
