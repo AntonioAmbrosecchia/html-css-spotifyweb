@@ -591,6 +591,7 @@ footer {
 
     #container_icons_volume {
         display: flex;
+        align-items: center;
 
         .fa-list {
             color: var(--spo-font);
