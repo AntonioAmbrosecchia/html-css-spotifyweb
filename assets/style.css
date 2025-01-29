@@ -22,22 +22,6 @@
         background-color: brown;
     }
 
-    #row_container_songs {
-        background-color: chartreuse;
-
-        .container_song {
-            background-color: aqua;
-
-            .img_song {
-                background-color: rgb(197, 101, 29);
-            }
-
-            .text_song {
-                background-color: blueviolet;
-            }
-        }
-    }
-
     #container_canzone_in_riproduzione {
         background-color: purple;
 
@@ -262,8 +246,8 @@
 
             #main_container_categorie {
                 display: flex;
+                justify-content: center;
                 align-items: center;
-                justify-content: space-around;
                 flex-wrap: wrap;
                 width: 100%;
                 padding: 20px;
@@ -271,25 +255,24 @@
 
                 .categorie {
                     color: var(--spo-font);
+                    margin: 10px;
                     display: flex;
                     justify-content: center;
-                    font-size: 16px;
+                    font-size: 15px;
                     display: flex;
-                    width: calc(100% / 12 * 4);
-                    margin-bottom: 30px;
+
                 }
             }
 
             #container_recently_played {
                 color: white;
                 font-size: 28px;
-                margin-left: 20px;
-                margin-bottom: 30px;
+                margin-left: 25px;
+                margin-top: 20px;
             }
 
             #row_container_songs {
                 display: flex;
-                justify-content: space-between;
                 flex-wrap: wrap;
                 width: 100%;
                 padding: 20px;
@@ -297,7 +280,6 @@
                 .container_song {
                     display: flex;
                     flex-direction: column;
-                    border: 1px solid black;
                     width: 170px;
                     margin: 10px;
 
@@ -306,52 +288,189 @@
                         background-size: cover;
                         background-repeat: no-repeat;
                         width: 100%;
-                        height: 160px;
+                        height: 170px;
                     }
 
                     #img_song_2 {
-                        background-image: url(../assets/img/metal_lifting.jpg);
+                        background-image: url(../assets/img/stranger.jpeg);
                         background-size: cover;
                         background-repeat: no-repeat;
                         width: 100%;
-                        height: 160px;
+                        height: 170px;
                     }
 
                     #img_song_3 {
-                        background-image: url(../assets/img/metal_lifting.jpg);
+                        background-image: url(../assets/img/aquietplace.jpeg);
                         background-size: cover;
                         background-repeat: no-repeat;
                         width: 100%;
-                        height: 160px;
+                        height: 170px;
                     }
 
                     #img_song_4 {
-                        background-image: url(../assets/img/metal_lifting.jpg);
+                        background-image: url(../assets/img/split.jpeg);
                         background-size: cover;
                         background-repeat: no-repeat;
                         width: 100%;
-                        height: 160px;
+                        height: 170px;
                     }
 
                     #img_song_5 {
-                        background-image: url(../assets/img/metal_lifting.jpg);
+                        background-image: url(../assets/img/cure.jpeg);
                         background-size: cover;
                         background-repeat: no-repeat;
                         width: 100%;
-                        height: 160px;
+                        height: 170px;
                     }
 
                     #img_song_6 {
-                        background-image: url(../assets/img/metal_lifting.jpg);
+                        background-image: url(../assets/img/sinister.jpeg);
                         background-size: cover;
                         background-repeat: no-repeat;
                         width: 100%;
-                        height: 160px;
+                        height: 170px;
                     }
 
                     .text_song {
+                        display: flex;
+                        flex-direction: column;
                         width: 100%;
-                        height: 72px;
+
+                        .title_song {
+                            color: white;
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                            text-align: center;
+                            font-size: 18px;
+                        }
+
+                        .subtitle_song {
+                            color: var(--spo-font);
+                            text-align: center;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            #creato_per_john_doe {
+                margin-left: 25px;
+                margin-top: 20px;
+
+                #titolo_creato_per_john_doe {
+                    color: white;
+                    font-size: 28px;
+                    margin-bottom: 10px;
+                }
+
+                #sottotesto_creato_per_john_doe {
+                    color: var(--spo-font);
+                    font-size: 14px;
+                }
+            }
+
+            #row_container_mix {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                padding: 20px;
+
+                .container_mix {
+                    display: flex;
+                    flex-direction: column;
+                    width: 170px;
+                    margin: 10px;
+
+                    #img_mix_1 {
+                        background-image: url(../assets/img/radar.jpeg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 170px;
+                    }
+
+                    #img_mix_2 {
+                        background-image: url(../assets/img/mixdaily.jpeg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        width: 100%;
+                        height: 170px;
+                    }
+
+                    .text_mix {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+
+                        .title_mix {
+                            color: white;
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            #artisti_piu_popolari {
+                margin-left: 25px;
+                margin-top: 20px;
+
+                #titolo_artisti_piu_popolari {
+                    color: white;
+                    font-size: 28px;
+                    margin-bottom: 10px;
+                }
+
+                #sottotesto_artisti_piu_popolari {
+                    color: var(--spo-font);
+                    font-size: 14px;
+                }
+            }
+
+            #row_container_popolar {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                padding: 20px;
+
+                .container_popolar {
+                    display: flex;
+                    flex-direction: column;
+                    width: 170px;
+                    margin: 10px;
+
+                    #img_popolar_1 {
+                        background-image: url(../assets/img/youg.jpeg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 100px;
+                        width: 100%;
+                        height: 170px;
+                    }
+
+                    #img_popolar_2 {
+                        background-image: url(../assets/img/einaudi.jpeg);
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        border-radius: 100px;
+                        width: 100%;
+                        height: 170px;
+                    }
+
+                    .text_popolar {
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                    }
+
+                    .title_popolar {
+                        color: white;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        font-size: 18px;
                     }
                 }
             }
