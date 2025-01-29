@@ -588,4 +588,38 @@ footer {
 
         }
     }
+
+    #container_icons_volume {
+        display: flex;
+
+        .fa-list {
+            color: var(--spo-font);
+            margin-right: 15px;
+        }
+
+        .fa-display {
+            color: var(--spo-font);
+            margin-right: 15px;
+        }
+
+        .fa-volume-high {
+            color: var(--spo-font);
+            margin-right: 15px;
+        }
+
+        #riga_volume_1 {
+            height: 5px;
+            border-radius: 5px;
+            background-color: white;
+            width: 20px;
+        }
+
+        #riga_volume_2 {
+            height: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: var(--spo-font);
+            width: 100px;
+        }
+    }
 }
