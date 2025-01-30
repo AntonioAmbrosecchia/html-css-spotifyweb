@@ -31,7 +31,7 @@
         width: 230px;
         height: calc(100vh - 90px);
         overflow-y: auto;
-        padding-bottom: 10px;
+
 
         #container_logo_scritta {
             display: flex;
@@ -63,6 +63,7 @@
                 width: 100%;
                 height: calc(100% / 12 * 3);
                 padding-left: 20px;
+                text-decoration: none;
 
                 #icon_menu_lime {
                     height: 25px;
@@ -81,6 +82,7 @@
                 width: 100%;
                 height: calc(100% / 12 * 3);
                 padding-left: 20px;
+                text-decoration: none;
 
                 .icon_menu {
                     height: 25px;
@@ -92,6 +94,12 @@
                     margin-left: 5px;
                     font-size: 15px;
                     color: var(--spo-font);
+
+
+                }
+
+                .text_menu:hover {
+                    color: white;
                 }
             }
         }
@@ -108,6 +116,7 @@
             margin-left: 25px;
             margin-bottom: 20px;
 
+
             #tasto_add {
                 background-color: var(--spo-font);
                 display: flex;
@@ -122,6 +131,7 @@
             #scritta_crea_playlist {
                 font-size: 17px;
                 color: var(--spo-font);
+                text-decoration: none;
             }
         }
 
@@ -130,6 +140,7 @@
             flex-direction: column;
             justify-content: space-between;
             margin-left: 25px;
+            text-decoration: none;
 
             .nomi_playlist {
                 color: var(--spo-font);
@@ -141,10 +152,14 @@
         #main_container_profile_download {
             display: flex;
             flex-direction: column;
+            background-color: var(--spo-colonna);
             height: 75px;
-            padding: 10px;
             margin-bottom: 5px;
             margin-left: 15px;
+            text-decoration: none;
+            position: sticky;
+            bottom: 5px;
+            left: 0;
 
             hr {
                 border-color: var(--spo-font);
@@ -214,7 +229,10 @@
             justify-content: end;
             align-items: center;
             width: 100%;
-            height: 90px;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            right: 0;
 
             #effettua_lupgrade {
                 color: white;
@@ -226,6 +244,7 @@
                 font-size: 14px;
                 padding-left: 20px;
                 padding-right: 20px;
+                text-decoration: none;
             }
         }
 
@@ -245,6 +264,7 @@
                 justify-content: center;
                 font-size: 15px;
                 display: flex;
+                text-decoration: none;
 
             }
         }
@@ -267,6 +287,9 @@
                 flex-direction: column;
                 width: 170px;
                 margin: 10px;
+                text-decoration: none;
+
+
 
                 #img_song_1 {
                     background-image: url(../assets/img/metal_lifting.jpg);
@@ -274,7 +297,24 @@
                     background-repeat: no-repeat;
                     width: 100%;
                     height: 170px;
+
+                    .overlay {
+
+                        color: white;
+                        font-size: 40px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.578);
+                        display: none;
+                    }
+
+                    .overlay:hover {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
+
 
                 #img_song_2 {
                     background-image: url(../assets/img/stranger.jpeg);
@@ -365,6 +405,7 @@
                 flex-direction: column;
                 width: 170px;
                 margin: 10px;
+                text-decoration: none;
 
                 #img_mix_1 {
                     background-image: url(../assets/img/radar.jpeg);
@@ -425,6 +466,7 @@
                 flex-direction: column;
                 width: 170px;
                 margin: 10px;
+                text-decoration: none;
 
                 #img_popolar_1 {
                     background-image: url(../assets/img/youg.jpeg);
