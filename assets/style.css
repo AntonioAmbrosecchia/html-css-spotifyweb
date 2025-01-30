@@ -16,14 +16,12 @@
 
 
 
-
-
 #container_column_main {
     display: flex;
     justify-content: row;
 
-
     column {
+
         background-color: var(--spo-colonna);
         display: flex;
         flex-direction: column;
@@ -41,6 +39,8 @@
             width: 100%;
 
             #img_logo {
+                background-image: url(./img/logo.svg);
+                background-repeat: no-repeat;
                 height: 50px;
                 width: 150px;
                 color: white;
@@ -90,12 +90,14 @@
                     filter: invert(44%) sepia(0%) saturate(41%) hue-rotate(134deg) brightness(94%) contrast(79%);
                 }
 
+                .icon_menu:hover {
+                    filter: none;
+                }
+
                 .text_menu {
                     margin-left: 5px;
                     font-size: 15px;
                     color: var(--spo-font);
-
-
                 }
 
                 .text_menu:hover {
@@ -193,6 +195,10 @@
                     height: 15px;
                 }
 
+                #icon_download:hover {
+                    filter: none;
+                }
+
                 #text_download {
                     color: var(--spo-font);
                 }
@@ -237,7 +243,7 @@
         background-color: var(--spo-main);
         display: flex;
         flex-direction: column;
-        width: calc(100% - 230px);
+        width: calc(100% - 70px);
         height: calc(100vh - 90px);
         overflow-y: auto;
 
@@ -314,8 +320,6 @@
                 margin: 10px;
                 text-decoration: none;
 
-
-
                 #img_song_1 {
                     background-image: url(./img/metal_lifting.jpg);
                     background-size: cover;
@@ -324,7 +328,6 @@
                     height: 170px;
 
                     .overlay {
-
                         color: white;
                         font-size: 40px;
                         width: 100%;
@@ -333,52 +336,126 @@
                         display: none;
                     }
 
-                    .overlay:hover {
+                    &:hover .overlay {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                     }
                 }
 
-
                 #img_song_2 {
-                    background-image: url(../assets/img/stranger.jpeg);
+                    background-image: url(./img/stranger.jpeg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 100%;
                     height: 170px;
+
+                    .overlay {
+                        color: white;
+                        font-size: 40px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.578);
+                        display: none;
+                    }
+
+                    &:hover .overlay {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
                 #img_song_3 {
-                    background-image: url(../assets/img/aquietplace.jpeg);
+                    background-image: url(./img/aquietplace.jpeg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 100%;
                     height: 170px;
+
+                    .overlay {
+                        color: white;
+                        font-size: 40px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.578);
+                        display: none;
+                    }
+
+                    &:hover .overlay {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
                 #img_song_4 {
-                    background-image: url(../assets/img/split.jpeg);
+                    background-image: url(./img/split.jpeg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 100%;
                     height: 170px;
+
+                    .overlay {
+                        color: white;
+                        font-size: 40px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.578);
+                        display: none;
+                    }
+
+                    &:hover .overlay {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
                 #img_song_5 {
-                    background-image: url(../assets/img/cure.jpeg);
+                    background-image: url(./img/cure.jpeg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 100%;
                     height: 170px;
+
+                    .overlay {
+                        color: white;
+                        font-size: 40px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.578);
+                        display: none;
+                    }
+
+                    &:hover .overlay {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
                 #img_song_6 {
-                    background-image: url(../assets/img/sinister.jpeg);
+                    background-image: url(./img/sinister.jpeg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 100%;
                     height: 170px;
+
+                    .overlay {
+                        color: white;
+                        font-size: 40px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.578);
+                        display: none;
+                    }
+
+                    &:hover .overlay {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
                 .text_song {
@@ -433,19 +510,49 @@
                 text-decoration: none;
 
                 #img_mix_1 {
-                    background-image: url(../assets/img/radar.jpeg);
+                    background-image: url(./img/radar.jpeg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 100%;
                     height: 170px;
+
+                    .overlay {
+                        color: white;
+                        font-size: 40px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.578);
+                        display: none;
+                    }
+
+                    &:hover .overlay {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
                 #img_mix_2 {
-                    background-image: url(../assets/img/mixdaily.jpeg);
+                    background-image: url(./img/mixdaily.jpeg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 100%;
                     height: 170px;
+
+                    .overlay {
+                        color: white;
+                        font-size: 40px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.578);
+                        display: none;
+                    }
+
+                    &:hover .overlay {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
                 .text_mix {
@@ -494,21 +601,53 @@
                 text-decoration: none;
 
                 #img_popolar_1 {
-                    background-image: url(../assets/img/youg.jpeg);
+                    background-image: url(./img/youg.jpeg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     border-radius: 100px;
                     width: 100%;
                     height: 170px;
+
+                    .overlay {
+                        color: white;
+                        font-size: 40px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.578);
+                        display: none;
+                        border-radius: 100px;
+                    }
+
+                    &:hover .overlay {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
                 #img_popolar_2 {
-                    background-image: url(../assets/img/einaudi.jpeg);
+                    background-image: url(./img/einaudi.jpeg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     border-radius: 100px;
                     width: 100%;
                     height: 170px;
+
+                    .overlay {
+                        color: white;
+                        font-size: 40px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.578);
+                        display: none;
+                        border-radius: 100px;
+                    }
+
+                    &:hover .overlay {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
                 .text_popolar {
@@ -572,11 +711,12 @@ footer {
 
         #container_icon_rip {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            margin-left: 40px;
+            margin-left: 10px;
 
             .fa-heart {
-                margin-right: 10px;
+
                 color: var(--spo-font);
             }
 
@@ -626,7 +766,7 @@ footer {
             }
 
             .fa-circle-play:hover {
-                font-size: ;
+                font-size: 30px;
             }
 
             .fa-forward-step {
@@ -646,15 +786,32 @@ footer {
             #riga_player_1 {
                 border-radius: 5px;
                 background-color: white;
-                width: 60px;
+                width: 20px;
                 height: 5px;
+                position: relative;
+            }
+
+            .fa-circle {
+                position: absolute;
+                color: white;
+                left: 316px;
+                display: none;
+                bottom: 15px;
+            }
+
+            &:hover .fa-circle {
+                display: block;
+            }
+
+            #riga_player_1:hover {
+                background-color: var(--spo-bordo);
             }
 
             #riga_player_2 {
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
                 background-color: var(--spo-font);
-                width: 190px;
+                width: 90px;
                 height: 5px;
             }
 
@@ -679,17 +836,29 @@ footer {
 
         .fa-list {
             color: var(--spo-font);
-            margin-right: 15px;
+            margin-right: 10px;
+        }
+
+        .fa-list:hover {
+            color: white;
         }
 
         .fa-display {
             color: var(--spo-font);
-            margin-right: 15px;
+            margin-right: 10px;
+        }
+
+        .fa-display:hover {
+            color: white;
         }
 
         .fa-volume-high {
             color: var(--spo-font);
-            margin-right: 15px;
+            margin-right: 10px;
+        }
+
+        .fa-volume-high:hover {
+            color: white;
         }
 
         #riga_volume_1 {
@@ -699,12 +868,118 @@ footer {
             width: 20px;
         }
 
+        #riga_volume_1:hover {
+            background-color: var(--spo-bordo);
+        }
+
         #riga_volume_2 {
             height: 5px;
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
             background-color: var(--spo-font);
-            width: 100px;
+            width: 50px;
+        }
+    }
+}
+
+
+@media screen and (max-width:552px) {
+
+    #container_column_main {
+
+        column {
+
+            width: 70px;
+
+            #container_logo_scritta {
+                margin-left: 20px;
+                margin-top: 10px;
+                height: 50px;
+                padding: 0;
+                width: 30px;
+
+                #img_logo {
+                    background-image: url(./img/logo-small.svg);
+                }
+            }
+
+            #main_container_menu {
+
+                #container_menu_lime {
+
+                    #text_menu_lime {
+                        display: none;
+                    }
+                }
+
+                .container_menu {
+
+                    .text_menu {
+                        display: none;
+                    }
+                }
+            }
+
+            #container_scritta_playlist {
+                display: none;
+            }
+
+            #container_crea_playlist {
+                display: none;
+            }
+
+            #container_nome_playlist {
+                display: none;
+            }
+
+            #main_container_profile_download {
+
+                hr {
+                    display: none;
+                }
+
+                #container_download {
+
+                    #text_download {
+                        display: none;
+                    }
+
+                    #icon_download {
+                        margin-left: 5px;
+                    }
+                }
+
+                #container_profile {
+
+                    #text_profile {
+                        display: none;
+                    }
+                }
+            }
+
+
+        }
+
+        main {
+
+            #main_container_categorie {
+
+                .categorie {
+                    font-size: 13px;
+                }
+            }
+
+            #container_recently_played {
+                font-size: 22px;
+            }
+
+            #row_container_songs {
+
+                .container_song {
+                    width: 200px;
+                }
+            }
+
         }
     }
 }

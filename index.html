@@ -24,7 +24,6 @@
             <div>
                 <div id="container_logo_scritta">
                     <div id="img_logo">
-                        <img src="./assets/img/logo.svg" alt="">
                     </div>
                 </div>
                 <div id="main_container_menu">
@@ -113,7 +112,7 @@
             <div id="container_recently_played">
                 <strong>Recently Played</strong>
             </div>
-            <row id="row_container_songs">
+            <div id="row_container_songs">
                 <a href="" class="container_song">
                     <div id="img_song_1">
                         <div class="overlay">
@@ -126,7 +125,11 @@
                     </div>
                 </a>
                 <a href="" class="container_song">
-                    <div id="img_song_2"></div>
+                    <div id="img_song_2">
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
                     <div class="text_song">
                         <p class="title_song">
                             <strong>Stranger Things&#44; Vol&#46; 1 &#40;a Netflix
@@ -138,7 +141,11 @@
                     </div>
                 </a>
                 <a href="" class="container_song">
-                    <div id="img_song_3"></div>
+                    <div id="img_song_3">
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
                     <div class="text_song">
                         <p class="title_song">
                             <strong>A Quiet place</strong>
@@ -149,7 +156,11 @@
                     </div>
                 </a>
                 <a href="" class="container_song">
-                    <div id="img_song_4"></div>
+                    <div id="img_song_4">
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
                     <div class="text_song">
                         <p class="title_song">
                             <strong>Split</strong>
@@ -160,7 +171,11 @@
                     </div>
                 </a>
                 <a href="" class="container_song">
-                    <div id="img_song_5"></div>
+                    <div id="img_song_5">
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
                     <div class="text_song">
                         <p class="title_song">
                             <strong>A Cure for Wellness</strong>
@@ -171,7 +186,11 @@
                     </div>
                 </a>
                 <a href="" class="container_song">
-                    <div id="img_song_6"></div>
+                    <div id="img_song_6">
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
                     <div class="text_song">
                         <p class="title_song">
                             <strong>Sinister</strong>
@@ -181,7 +200,7 @@
                         </p>
                     </div>
                 </a>
-            </row>
+            </div>
             <div id="creato_per_john_doe">
                 <p id="titolo_creato_per_john_doe">
                     <strong>Creato per Jhon Doe</strong>
@@ -193,9 +212,13 @@
                     </strong>
                 </p>
             </div>
-            <row id="row_container_mix">
+            <div id="row_container_mix">
                 <a href="" class="container_mix">
-                    <div id="img_mix_1"></div>
+                    <div id="img_mix_1">
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
                     <div class="text_mix">
                         <p class="title_mix">
                             <strong>Release Radar</strong>
@@ -203,14 +226,18 @@
                     </div>
                 </a>
                 <a href="" class="container_mix">
-                    <div id="img_mix_2"></div>
+                    <div id="img_mix_2">
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
                     <div class="text_mix">
                         <p class="title_mix">
                             <strong>Daily Mix 1</strong>
                         </p>
                     </div>
                 </a>
-            </row>
+            </div>
             <div id="artisti_piu_popolari">
                 <p id="titolo_artisti_piu_popolari">
                     <strong>Artisti pi&#249; popolari</strong>
@@ -222,9 +249,13 @@
                     </strong>
                 </p>
             </div>
-            <row id="row_container_popolar">
+            <div id="row_container_popolar">
                 <a href="" class="container_popolar">
-                    <div id="img_popolar_1"></div>
+                    <div id="img_popolar_1">
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
                     <div class="text_popolar">
                         <p class="title_popolar">
                             <strong>Lana del Rey</strong>
@@ -232,14 +263,18 @@
                     </div>
                 </a>
                 <a href="" class="container_popolar">
-                    <div id="img_popolar_2"></div>
+                    <div id="img_popolar_2">
+                        <div class="overlay">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </div>
+                    </div>
                     <div class="text_popolar">
                         <p class="title_popolar">
                             <strong>Ludovico Eunaudi</strong>
                         </p>
                     </div>
                 </a>
-            </row>
+            </div>
         </main>
     </div>
     <footer>
@@ -270,6 +305,7 @@
                 </div>
                 <a href="" id="riga_player_1">
                 </a>
+                <i class="fa-solid fa-circle"></i>
                 <a href="" id="riga_player_2">
                 </a>
                 <div id="numero_traccia_audio_2">
@@ -281,11 +317,9 @@
             <a href=""><i class="fa-solid fa-list"></i></a>
             <a href=""><i class="fa-solid fa-display"></i></a>
             <a href=""><i class="fa-solid fa-volume-high"></i></a>
-            <a href="">
-                <div id="riga_volume_1"></div>
+            <a id="riga_volume_1" href="">
             </a>
-            <a href="">
-                <div id="riga_volume_2"></div>
+            <a id="riga_volume_2" href="">
             </a>
         </div>
     </footer>
