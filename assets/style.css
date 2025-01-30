@@ -20,6 +20,7 @@
     display: flex;
     justify-content: row;
 
+    /*colonna laterale*/
     column {
 
         background-color: var(--spo-colonna);
@@ -30,7 +31,7 @@
         height: calc(100vh - 90px);
         overflow-y: auto;
 
-
+        /*logo spotify*/
         #container_logo_scritta {
             display: flex;
             align-items: center;
@@ -48,6 +49,7 @@
 
         }
 
+        /*menu di navigazione*/
         #main_container_menu {
             display: flex;
             flex-direction: column;
@@ -106,12 +108,14 @@
             }
         }
 
+        /*scritta "PLAYLIST"*/
         #container_scritta_playlist {
             color: white;
             margin-left: 25px;
             margin-bottom: 10px;
         }
 
+        /*tasto e testo crea playlist*/
         #container_crea_playlist {
             display: flex;
             align-items: center;
@@ -135,7 +139,7 @@
             }
 
             #scritta_crea_playlist {
-                font-size: 17px;
+                font-size: 14px;
                 color: var(--spo-font);
                 text-decoration: none;
             }
@@ -145,6 +149,7 @@
             }
         }
 
+        /*nomi delle playlist*/
         #container_nome_playlist {
             display: flex;
             flex-direction: column;
@@ -163,6 +168,7 @@
             }
         }
 
+        /*profilo dell utente e tasto download*/
         #main_container_profile_download {
             display: flex;
             flex-direction: column;
@@ -239,6 +245,7 @@
         }
     }
 
+    /*contenuto principale*/
     main {
         background-color: var(--spo-main);
         display: flex;
@@ -247,6 +254,7 @@
         height: calc(100vh - 90px);
         overflow-y: auto;
 
+        /*banda superiore con tasto "EFFETTUA L'UPGRADE"*/
         #container_banda_main {
             background-color: var(--spo-upgrade);
             display: flex;
@@ -276,6 +284,7 @@
             }
         }
 
+        /*categorie canzoni*/
         #main_container_categorie {
             display: flex;
             justify-content: center;
@@ -300,6 +309,7 @@
             }
         }
 
+        /*scritta "Recently Played"*/
         #container_recently_played {
             color: white;
             font-size: 28px;
@@ -307,6 +317,7 @@
             margin-top: 20px;
         }
 
+        /*ultime canzoni ascoltate*/
         #row_container_songs {
             display: flex;
             flex-wrap: wrap;
@@ -480,6 +491,7 @@
             }
         }
 
+        /*testo "Creato per Jhon Doe"*/
         #creato_per_john_doe {
             margin-left: 25px;
             margin-top: 20px;
@@ -496,6 +508,7 @@
             }
         }
 
+        /*mix canzoni personalizzato*/
         #row_container_mix {
             display: flex;
             flex-wrap: wrap;
@@ -571,6 +584,7 @@
             }
         }
 
+        /*scritta "artisti più popolari"*/
         #artisti_piu_popolari {
             margin-left: 25px;
             margin-top: 20px;
@@ -587,6 +601,7 @@
             }
         }
 
+        /*consigli artisti popolari*/
         #row_container_popolar {
             display: flex;
             flex-wrap: wrap;
@@ -668,6 +683,7 @@
     }
 }
 
+/*player canzone in riproduzione*/
 footer {
     background-color: var(--spo-player);
     display: flex;
@@ -677,6 +693,7 @@ footer {
     overflow-y: auto;
     padding: 10px;
 
+    /*brano in riproduzione*/
     #container_canzone_in_riproduzione {
         display: flex;
 
@@ -716,7 +733,6 @@ footer {
             margin-left: 10px;
 
             .fa-heart {
-
                 color: var(--spo-font);
             }
 
@@ -734,6 +750,7 @@ footer {
         }
     }
 
+    /*player*/
     #container_player_botton {
         display: flex;
         flex-direction: column;
@@ -830,6 +847,7 @@ footer {
         }
     }
 
+    /*regolazione volume*/
     #container_icons_volume {
         display: flex;
         align-items: center;
@@ -883,6 +901,10 @@ footer {
 }
 
 
+
+
+
+/*parte mobile*/
 @media screen and (max-width:552px) {
 
     #container_column_main {
@@ -974,12 +996,66 @@ footer {
             }
 
             #row_container_songs {
+                padding: 20px;
 
                 .container_song {
-                    width: 200px;
+                    width: 190px;
+                    margin: 5px;
                 }
             }
 
+        }
+    }
+}
+
+/*parte deckstop*/
+@media screen and (min-width:878px) {
+
+    footer {
+
+        #container_canzone_in_riproduzione {
+
+            #container_icon_rip {
+                flex-direction: row;
+                margin: 40px;
+
+                .fa-heart {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        #container_player_botton {
+
+            #container_player {
+
+                #riga_player_1 {
+                    width: 50px;
+                }
+
+                #riga_player_2 {
+                    width: 180px;
+                }
+            }
+        }
+
+        #container_icons_volume {
+
+            .fa-list {
+                margin-right: 20px;
+            }
+
+            .fa-volume-high {
+                margin-right: 20px;
+            }
+
+            #riga_volume_1 {
+                width: 40px;
+            }
+
+            #riga_volume_2 {
+                width: 90px;
+            }
         }
     }
 }
