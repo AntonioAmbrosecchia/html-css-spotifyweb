@@ -128,10 +128,18 @@
                 height: 35px;
             }
 
+            #tasto_add:hover {
+                background-color: white;
+            }
+
             #scritta_crea_playlist {
                 font-size: 17px;
                 color: var(--spo-font);
                 text-decoration: none;
+            }
+
+            #scritta_crea_playlist:hover {
+                color: white;
             }
         }
 
@@ -146,6 +154,10 @@
                 color: var(--spo-font);
                 font-size: 15px;
                 margin-bottom: 25px;
+            }
+
+            .nomi_playlist:hover {
+                color: white;
             }
         }
 
@@ -184,7 +196,13 @@
                 #text_download {
                     color: var(--spo-font);
                 }
+
+                #text_download:hover {
+                    color: white;
+                }
             }
+
+
 
             #container_profile {
                 display: flex;
@@ -246,6 +264,10 @@
                 padding-right: 20px;
                 text-decoration: none;
             }
+
+            #effettua_lupgrade:hover {
+                font-size: 17px
+            }
         }
 
         #main_container_categorie {
@@ -265,7 +287,10 @@
                 font-size: 15px;
                 display: flex;
                 text-decoration: none;
+            }
 
+            .categorie:hover {
+                color: white;
             }
         }
 
@@ -292,7 +317,7 @@
 
 
                 #img_song_1 {
-                    background-image: url(../assets/img/metal_lifting.jpg);
+                    background-image: url(./img/metal_lifting.jpg);
                     background-size: cover;
                     background-repeat: no-repeat;
                     width: 100%;
@@ -531,6 +556,11 @@ footer {
                 margin-left: 10px;
                 font-size: 14px;
                 color: white;
+                text-decoration: none;
+            }
+
+            #title_rip:hover {
+                text-decoration: underline;
             }
 
             #subtitle_rip {
@@ -550,8 +580,16 @@ footer {
                 color: var(--spo-font);
             }
 
+            .fa-heart:hover {
+                color: white;
+            }
+
             .fa-folder {
                 color: var(--spo-font);
+            }
+
+            .fa-folder:hover {
+                color: white;
             }
         }
     }
@@ -585,6 +623,10 @@ footer {
                 margin-left: 30px;
                 margin-right: 30px;
                 font-size: 25px;
+            }
+
+            .fa-circle-play:hover {
+                font-size: ;
             }
 
             .fa-forward-step {
